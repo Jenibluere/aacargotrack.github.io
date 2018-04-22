@@ -28,13 +28,13 @@ function clock(){
     difference=(totalTimeSecs-(50*60))-tradeCount*3930;
     
     if (difference<=750) {
-        shipStatus = 'Waiting in Solzreed'
-    } else if (difference <= 1950) {
-        shipStatus = 'Solzreed --> Ynystere'
-    } else if (difference <= 2710) {
-        shipStatus = 'Waiting in Ynystere'
-    } else {
         shipStatus = 'Ynystere --> Solzreed'
+    } else if (difference <= 1950) {
+        shipStatus = 'Waiting in Solzreed'
+    } else if (difference <= 2770) {
+        shipStatus = 'Solzreed --> Ynystere'
+    } else {
+        shipStatus = 'Waiting in Ynystere'
     }
 
 
