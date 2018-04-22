@@ -26,6 +26,7 @@ function clock(){
     }
     tradeCount=Math.floor(totalTimeSecs/(85*60));
     difference=totalTimeSecs/(85*60)-tradeCount;
+    
     if (difference<=0.15) {
         shipStatus = 'Waiting in Solzreed'
     } else if (difference <= 0.5) {
@@ -54,5 +55,9 @@ function $(id,val){
     }
     document.getElementById(id).innerHTML=val;
 };
+
+function updateDebug() {
+    $('difference',difference)
+}
 
 window.onload=init;
