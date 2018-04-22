@@ -24,14 +24,14 @@ function clock(){
             }
         }
     }
-    tradeCount=Math.floor(totalTimeSecs/(85*60));
-    difference=totalTimeSecs/(85*60)-tradeCount;
+    tradeCount=Math.floor(totalTimeSecs/(3930));
+    difference=totalTimeSecs-tradeCount*3930;
     
-    if (difference<=0.15) {
+    if (difference<=750) {
         shipStatus = 'Waiting in Solzreed'
-    } else if (difference <= 0.5) {
+    } else if (difference <= 1950) {
         shipStatus = 'Solzreed --> Ynystere'
-    } else if (difference <= 0.65) {
+    } else if (difference <= 2710) {
         shipStatus = 'Waiting in Ynystere'
     } else {
         shipStatus = 'Ynystere --> Solzreed'
