@@ -24,7 +24,7 @@ function clock(){
             }
         }
     }
-    tradeCount=Math.floor(totalTimeSecs/(3930));
+    tradeCount=Math.floor(totalTimeSecs-(50*60)/(3930));//Update the offset every so often
     difference=totalTimeSecs-tradeCount*3930;
     
     if (difference<=750) {
