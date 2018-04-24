@@ -27,11 +27,11 @@ function clock(){
     tradeCount=Math.floor((totalTimeSecs-(50*60))/(3930));//Update the offset every so often
     difference=(totalTimeSecs-(50*60))-tradeCount*3930;
     
-    if (difference<=750) {
+    if (difference<=570) {
         shipStatus = 'Ynystere --> Solzreed'
-    } else if (difference <= 1950) {
+    } else if (difference <= 1770) {
         shipStatus = 'Waiting in Solzreed'
-    } else if (difference <= 2770) {
+    } else if (difference <= 2540) {
         shipStatus = 'Solzreed --> Ynystere'
     } else {
         shipStatus = 'Waiting in Ynystere'
