@@ -25,7 +25,7 @@ function clock(){
         }
     }
     tradeCount=Math.floor((totalTimeSecs-(50*60))/(3930));//Update the offset every so often
-    difference=(totalTimeSecs-(50*60)-500)-tradeCount*3930;
+    difference=(totalTimeSecs-(50*60))-tradeCount*3930;
     
     if (difference<=770) {
         shipStatus = 'Ynystere --> Solzreed'
