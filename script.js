@@ -5,7 +5,7 @@ function init(){
     h=d.getHours()-1;
     m=d.getMinutes();
     s=d.getSeconds();
-    totalTimeSecs=(h*60*60+m*60+s+800);
+    totalTimeSecs=(h*60*60+m*60+s+900);
 
     clock();
 };
